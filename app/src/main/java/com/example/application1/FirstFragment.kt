@@ -34,6 +34,9 @@ class FirstFragment : Fragment() {
 
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment) }
+
+        binding.recycle1.adapter = AdapterFragmentList(listOf("String 1", "String 2", "String 3", "String 4", "String 5", "String 6", "String 7", "String 8", "String 9", "String 10"))
+
     }
 
     override fun onDestroyView() {

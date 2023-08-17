@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.application1.databinding.FragmentSecondBinding
+import com.google.android.material.snackbar.Snackbar
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -34,6 +35,17 @@ class SecondFragment : Fragment() {
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+        }
+
+        binding.takeInput.setOnClickListener {
+            binding.showEmail.text = binding.editext.text
+
+            if (binding.editext.text.contains("@")) {
+                Snackbar.make(binding.takeInput, binding.editext.text, Snackbar.LENGTH_SHORT).show()
+            } else {
+                Snackbar.make(binding.takeInput, R.string.email_not_valid, Snackbar.LENGTH_SHORT).show()
+            }
+
         }
     }
 

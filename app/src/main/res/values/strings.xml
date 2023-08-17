@@ -44,11 +44,13 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="presentation1">
-        This is my first app:
-        It is created with one Activity and two Fragments.
-        This is the first Fragment.
+        This is my first app: It is created with one Activity and two Fragments. This is the first Fragment, it has a "Next" button which takes the user to the second fragment. It also has a RecyclerView with a list of 10 Strings and a button with a Toast that shows the String, as well as an ImageView with an svg that repeats itself with the list.
     </string>
 
-    <string name="presentation2">This is the second Fragment.</string>
+    <string name="presentation2">This is the second Fragment, it contains a "previous" button to take the user back to the first fragment. It has an Edittext with an associated button which takes an email input from the user. The input needs to contain an "@" symbol and will also be displayed on top of the Edittext once the button is clicked, as well as in a Snackbar.</string>
+    <string name="edittext">This is an EditText.</string>
+    <string name="input_email">Insert your email.</string>
+    <string name="take_input">Take Input</string>
+    <string name="email_not_valid">Email not valid!</string>
     <string name="action_profile">Profile</string>
 </resources>
